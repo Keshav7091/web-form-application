@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #dce1e6;
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+  /* background-color: #fff; */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 14px 30px;
+}
+
+.navbar-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.logo .blue {
+  color: #0078ff;
+}
+
+
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.nav-links .active-link {
+  color: #0078ff;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.content {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.submitMsg{
+  font-size: 20px;
+  color: green;
+}
+
+/* FORM */
+form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(50% - 10px);
+}
+
+form .input-box.full-width {
+  width: 100%;
+}
+
+form .input-box span.details {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  padding-left: 15px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f8f9fc;
+  transition: border-color 0.3s;
+}
+
+.user-details .input-box input:focus {
+  border-color: #0078ff;
+  outline: none;
+}
+
+/* Styling for the password input and eye icon */
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  width: 100%;
+  height: 45px;
+  padding-left: 15px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f8f9fc;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #0078ff;
+}
+
+
+#errorMessages {
+  display:none; 
+  color:red;
+  font-size: 14px;
+}
+
+#errorMessages ul {
+  list-style-type: none;
+}
+
+#errorMessages li {
+  margin: 5px 0;
+}
+
+
+.btn {
+  margin-top: 20px;
+  width: 100%;
+  height: 45px;
+  background-color: #0078ff;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.btn:hover {
+  background-color: #005ce6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  form .user-details .input-box {
+    width: 100%;
+  }
+}
